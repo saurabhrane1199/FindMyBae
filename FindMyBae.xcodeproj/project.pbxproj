@@ -12,6 +12,8 @@
 		09E06A542C3730CD007582A5 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E06A532C3730CD007582A5 /* Item.swift */; };
 		09E06A562C3730CF007582A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09E06A552C3730CF007582A5 /* Assets.xcassets */; };
 		09E06A592C3730CF007582A5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09E06A582C3730CF007582A5 /* Preview Assets.xcassets */; };
+		09E06A612C373281007582A5 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 09E06A602C373281007582A5 /* RealmSwift */; };
+		09E06A642C3734EA007582A5 /* Geohash in Frameworks */ = {isa = PBXBuildFile; productRef = 09E06A632C3734EA007582A5 /* Geohash */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09E06A642C3734EA007582A5 /* Geohash in Frameworks */,
+				09E06A612C373281007582A5 /* RealmSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +57,7 @@
 		09E06A4E2C3730CD007582A5 /* FindMyBae */ = {
 			isa = PBXGroup;
 			children = (
+				09E06A652C373510007582A5 /* New Group */,
 				09E06A4F2C3730CD007582A5 /* FindMyBaeApp.swift */,
 				09E06A512C3730CD007582A5 /* ContentView.swift */,
 				09E06A532C3730CD007582A5 /* Item.swift */,
@@ -68,6 +73,13 @@
 				09E06A582C3730CF007582A5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		09E06A652C373510007582A5 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +98,10 @@
 			dependencies = (
 			);
 			name = FindMyBae;
+			packageProductDependencies = (
+				09E06A602C373281007582A5 /* RealmSwift */,
+				09E06A632C3734EA007582A5 /* Geohash */,
+			);
 			productName = FindMyBae;
 			productReference = 09E06A4C2C3730CD007582A5 /* FindMyBae.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +130,10 @@
 				Base,
 			);
 			mainGroup = 09E06A432C3730CC007582A5;
+			packageReferences = (
+				09E06A5F2C373281007582A5 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				09E06A622C3734EA007582A5 /* XCRemoteSwiftPackageReference "Geohash" */,
+			);
 			productRefGroup = 09E06A4D2C3730CD007582A5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -346,6 +366,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		09E06A5F2C373281007582A5 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		09E06A622C3734EA007582A5 /* XCRemoteSwiftPackageReference "Geohash" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/michael-groble/Geohash";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		09E06A602C373281007582A5 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 09E06A5F2C373281007582A5 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		09E06A632C3734EA007582A5 /* Geohash */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 09E06A622C3734EA007582A5 /* XCRemoteSwiftPackageReference "Geohash" */;
+			productName = Geohash;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 09E06A442C3730CC007582A5 /* Project object */;
 }

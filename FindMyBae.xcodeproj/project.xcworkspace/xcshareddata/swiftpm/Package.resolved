@@ -1,0 +1,33 @@
+{
+  "originHash" : "8906fe6c34bbf303e211af2bfd9bd484494208e73516441f387b9acfa88b988b",
+  "pins" : [
+    {
+      "identity" : "geohash",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/michael-groble/Geohash",
+      "state" : {
+        "branch" : "master",
+        "revision" : "056fe8d393a8817cde6890a5543621ea2ce8452b"
+      }
+    },
+    {
+      "identity" : "realm-core",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/realm/realm-core.git",
+      "state" : {
+        "revision" : "f889f79a2301208fd9d322d07abfc883b8f2046c",
+        "version" : "14.10.2"
+      }
+    },
+    {
+      "identity" : "realm-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/realm/realm-swift.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "9f850cb56f90ea14e840b051b7e2318ac5d7b16d"
+      }
+    }
+  ],
+  "version" : 3
+}
